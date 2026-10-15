@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ผลงานของฉัน (Portfolio) | Pichakorn Portfolio</title>
+  <meta name="description" content="รวมผลงานการพัฒนาซอฟต์แวร์ เว็บแอปพลิเคชัน โมบายแอป AI และงานออกแบบ UI/UX ของ พิชากร ไชยปัญหา">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+        <span>Pichakorn<span class="gradient-text">.Dev</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="education.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+        <a href="portfolio.html" class="nav-link active"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+        <a href="activity.html" class="nav-link"><i class="fa-solid fa-trophy"></i> Activity</a>
+        <a href="contact.html" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" title="สลับโหมดการแสดงผล">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="เปิดเมนู">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="portfolio-section" style="padding: 30px 0;">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="badge"><i class="fa-solid fa-laptop-code"></i> แฟ้มสะสมผลงาน</div>
+          <h1 class="section-title">ผลงานและการพัฒนา <span class="gradient-text">ซอฟต์แวร์</span></h1>
+          <p class="section-desc">
+            รวบรวมโปรเจกต์ที่ได้ลงมือพัฒนาจริง ครอบคลุมทั้ง Web Application, Mobile App, ปัญญาประดิษฐ์ (AI) และงานออกแบบ UI/UX สวยงาม
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-border-all"></i> ทั้งหมด (All)
+          </button>
+          <button class="filter-btn" data-filter="web">
+            <i class="fa-solid fa-globe"></i> Web 
+          </button>
+          <button class="filter-btn" data-filter="game">
+            <i class="fa-solid fa-gamepad"></i> Game Development
+          </button>
+          
+          <button class="filter-btn" data-filter="uxui">
+            <i class="fa-solid fa-palette"></i> UI/UX Design
+          </button>
+          <button class="filter-btn" data-filter="2D">
+            <i class="fa-solid fa-palette"></i> 2D Art & Animation
+          </button>
+        </div>
+
+        <!-- Portfolio Cards Grid -->
+        <div class="portfolio-grid">
+
+          <!-- Project 1: E-Commerce -->
+          <div class="portfolio-card" data-category="web">
+            <div class="portfolio-thumb">
+              <img src="images/web_1.png" alt="NextShop Pro E-Commerce Platform" loading="lazy">
+              <span class="portfolio-category-tag"><i class="fa-solid fa-globe"></i> Web </span>
+            </div>
+            <div class="portfolio-body">
+              <h3 class="portfolio-title">webแนะนำ</h3>
+              <p class="portfolio-desc">
+                แนะนำสถานที่ท่องเที่ยวในมหาสารคาม
+              </p>
+              
+              <div class="portfolio-actions">
+                <button class="btn btn-primary btn-sm btn-view-detail" 
+                  data-title="webแนะนำ"
+                  data-desc="แนะนำสถานที่ท่องเที่ยวในมหาสารคาม"
+                  data-img="images/web_1.png"
+                  data-tech="<span class='tech-tag'>Next.js</span> <span class='tech-tag'>TypeScript</span> <span class='tech-tag'>Tailwind</span> <span class='tech-tag'>PostgreSQL</span> <span class='tech-tag'>Stripe API</span>"
+                  <i class="fa-solid fa-circle-info"></i> รายละเอียด
+                </button>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: MediCare Mobile -->
+          <div class="portfolio-card" data-category="uxui">
+            <div class="portfolio-thumb">
+              <img src="images/figma.png" alt="MediCare Smart Clinic Mobile App" loading="lazy">
+              <span class="portfolio-category-tag"><i class="fa-solid fa-gamepad"></i> UI/UX Design</span>
+            </div>
+            <div class="portfolio-body">
+              <h3 class="portfolio-title">figma uxui design</h3>
+              <p class="portfolio-desc">
+                ออกแบบ UI/UX สำหรับแอปพลิเคชันมือถือ
+              </p>
+              
+              <div class="portfolio-actions">
+                <button class="btn btn-primary btn-sm btn-view-detail" 
+                  data-title="MediCare - Smart Telemedicine App"
+                  data-desc="ออกแบบ UI/UX สำหรับแอปพลิเคชันมือถือ"
+                  data-img="images/figma.png"
+                  data-tech="<span class='tech-tag'>Flutter</span> <span class='tech-tag'>Firebase</span> <span class='tech-tag'>WebRTC</span> <span class='tech-tag'>Cloud Functions</span>"
+                  <i class="fa-solid fa-circle-info"></i> รายละเอียด
+                </button>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: OmniBrain AI -->
+          <div class="portfolio-card" data-category="2D">
+            <div class="portfolio-thumb">
+              <img src="images/cave.png" alt="cave" loading="lazy">
+              <span class="portfolio-category-tag"><i class="fa-solid fa-brain"></i> 2D Game Design</span>
+            </div>
+            <div class="portfolio-body">
+              <h3 class="portfolio-title">cave</h3>
+              <p class="portfolio-desc">
+                การออกแบบฉากสำหรับเกมแอคชันผจญภัย
+              </p>
+              
+              <div class="portfolio-actions">
+                <button class="btn btn-primary btn-sm btn-view-detail" 
+                  data-title="cave"
+                  data-desc="การออกแบบฉากสำหรับเกมแอคชันผจญภัย"
+                  data-img="images/cave.png"
+                  data-tech="<span class='tech-tag'>Unity</span> <span class='tech-tag'>C#</span> <span class='tech-tag'>Blender</span>"
+                  <i class="fa-solid fa-circle-info"></i> รายละเอียด
+                </button>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: FinTrack 360 -->
+          <div class="portfolio-card" data-category="web">
+            <div class="portfolio-thumb">
+              <img src="images/web_2.png" alt="FinTrack 360 Financial Dashboard" loading="lazy">
+              <span class="portfolio-category-tag"><i class="fa-solid fa-globe"></i> Web</span>
+            </div>
+            <div class="portfolio-body">
+              <h3 class="portfolio-title">web</h3>
+              <p class="portfolio-desc">
+                แนะนำการท่องเที่ยวในมหาสารคาม
+              </p>
+              
+              <div class="portfolio-actions">
+                <button class="btn btn-primary btn-sm btn-view-detail" 
+                  data-title="FinTrack 360 - Financial Dashboard"
+                  data-desc="แนะนำการท่องเที่ยวในมหาสารคาม"
+                  data-img="images/web_2.png"
+                  data-tech="<span class='tech-tag'>React</span> <span class='tech-tag'>Chart.js</span> <span class='tech-tag'>Express</span> <span class='tech-tag'>MongoDB</span>"
+                  <i class="fa-solid fa-circle-info"></i> รายละเอียด
+                </button>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: SmartHome IoT -->
+          <div class="portfolio-card" data-category="2D">
+            <div class="portfolio-thumb">
+              <img src="images/Prop Design.png" alt="SmartHome IoT Automation System" loading="lazy">
+              <span class="portfolio-category-tag"><i class="fa-solid fa-brain"></i> AI &amp; IoT</span>
+            </div>
+            <div class="portfolio-body">
+              <h3 class="portfolio-title">prop design</h3>
+              <p class="portfolio-desc">
+                การออกแบบอาวุธและอุปกรณ์สำหรับเกมแอคชันผจญภัย
+              </p>
+              
+              <div class="portfolio-actions">
+                <button class="btn btn-primary btn-sm btn-view-detail" 
+                  data-title="SmartHome IoT - Energy Control Hub"
+                  data-desc="การออกแบบอาวุธและอุปกรณ์สำหรับเกมแอคชันผจญภัย"
+                  data-img="images/Prop Design.png"
+                  data-tech="<span class='tech-tag'>Vue.js</span> <span class='tech-tag'>MQTT</span> <span class='tech-tag'>ESP32</span> <span class='tech-tag'>InfluxDB</span>"
+                  
+                  <i class="fa-solid fa-circle-info"></i> รายละเอียด
+                </button>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Zenith Travel UI/UX -->
+          <div class="portfolio-card" data-category="2D">
+            <div class="portfolio-thumb">
+              <img src="images/shader.png" alt="Zenith Travel UI/UX Design" loading="lazy">
+              <span class="portfolio-category-tag"><i class="fa-solid fa-palette"></i> UI/UX Design</span>
+            </div>
+            <div class="portfolio-body">
+              <h3 class="portfolio-title">shader</h3>
+              <p class="portfolio-desc">
+                การลงแสงเงาและเอฟเฟกต์สำหรับเกมแอคชันผจญภัย
+              </p>
+              
+              <div class="portfolio-actions">
+                <button class="btn btn-primary btn-sm btn-view-detail" 
+                  data-title="Zenith Travel - UI/UX Booking System"
+                  data-desc="การลงแสงเงาและเอฟเฟกต์สำหรับเกมแอคชันผจญภัย"
+                  data-img="images/shader.png"
+                  data-tech="<span class='tech-tag'>Figma</span> <span class='tech-tag'>Design System</span> <span class='tech-tag'>Usability Testing</span>"
+                  
+                  <i class="fa-solid fa-circle-info"></i> รายละเอียด
+                </button>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal Popup -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="ปิดหน้าต่าง">&times;</button>
+      <div style="height: 240px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px;">
+        <img id="modalImg" src="" alt="Project Preview" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <h2 id="modalTitle" style="font-size: 1.5rem; margin-bottom: 12px; color: var(--text-main);">ชื่อผลงาน</h2>
+      <div id="modalTech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;"></div>
+      <p id="modalDesc" style="color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">รายละเอียดผลงาน</p>
+      <div style="display: flex; gap: 12px;">
+        <a id="modalLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1;">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> เปิดดูโปรเจกต์
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       UNIFIED FOOTER (Used identically across all pages)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+            <span>Pichakorn<span class="gradient-text">.Dev</span></span>
+          </div>
+          <p>
+            เว็บไซต์พอร์ตโฟลิโอส่วนตัว จัดทำขึ้นเพื่อรวบรวมประวัติการศึกษา ผลงานการพัฒนาซอฟต์แวร์ กิจกรรม และช่องทางการติดต่อ สำหรับนำเสนองานและการสมัครงาน
+          </p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:pichakorn.dev@gmail.com" class="social-btn" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Line"><i class="fa-brands fa-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">เมนูนำทาง</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Home (หน้าแรก)</a></li>
+            <li><a href="education.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Education (การศึกษา)</a></li>
+            <li><a href="portfolio.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Portfolio (ผลงาน)</a></li>
+            <li><a href="activity.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Activity (กิจกรรม)</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Contact (ติดต่อเรา)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Key Competencies -->
+        <div class="footer-col">
+          <h4 class="footer-heading">ความเชี่ยวชาญ</h4>
+          <ul class="footer-links-list">
+            <li><span class="footer-link"><i class="fa-solid fa-check"></i> Web Development</span></li>
+            <li><span class="footer-link"><i class="fa-solid fa-check"></i> Mobile Application</span></li>
+            <li><span class="footer-link"><i class="fa-solid fa-check"></i> Cloud &amp; DevOps</span></li>
+            <li><span class="footer-link"><i class="fa-solid fa-check"></i> UI/UX Modern Design</span></li>
+            <li><span class="footer-link"><i class="fa-solid fa-check"></i> Software Engineering</span></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Summary -->
+        <div class="footer-col">
+          <h4 class="footer-heading">ติดต่อเรา</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>กรุงเทพมหานคร, ประเทศไทย (พร้อมทำงาน On-site &amp; Remote)</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>pichakorn.dev@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>(+66) 089-123-4567</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>Pichakorn Chanwit</strong>. All Rights Reserved. ออกแบบและพัฒนาด้วยความใส่ใจ
+        </div>
+        <button class="back-to-top" id="backToTop" aria-label="กลับสู่ด้านบน">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
